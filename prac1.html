@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Food System</title>
+
+	<h1 align="center" style="color:blanchedalmond;">Food Billing System</h1>
+
+	<script type="text/javascript" src="chili.js"></script>
+	<link rel="stylesheet" href="table.css">
+
+</head>
+<body>
+
+	<table border="1" align="center">
+		
+		<tr>
+			<th>Item</th>
+			<th>Quantity</th>
+			<th>Price</th>
+			<th>Action</th>
+		</tr>	
+
+		<tr>
+
+			<td>Chili Poweder</td>
+			<td><input type="number" id="q1" value="1"></td>
+			<td>100</td>
+			<td><input type="button" id=1 value="Add" onClick="add('Chili Powder','q1',100)">
+		</tr> 
+
+		<tr>
+			<td>Pickle</td>
+			<td><input type="number" id="q2" value="1"></td>
+			<td>200</td>
+			<td><input type="button" id=2 value="Add" onclick="add('Pickel','q2',200)">
+		</tr> 
+
+		<tr>
+			<td>Dry Fruits</td>
+			<td><input type="number" id="q3" value="1"></td>
+			<td>500</td>
+			<td><input type="button" id=3 value="Add" onclick="add('Dry Fruits','q3',500)">
+		</tr>
+
+
+	</table>
+	<p align="center">
+	<input type="button"  id="b1" value="PrintBill" onClick="bill()"></button>
+	</p>
+	<p id="msg"></p>
+	<div id="pricetbl">
+<table border="1" align="center" >
+		
+		<tr>
+			<th>Item</th>
+			<th>Quantity</th>
+			<th>Price</th>
+			
+		</tr>
+
+		<tbody id="tb"></tbody>	
+
+	</table>
+</div>
+</body>
+</html>
